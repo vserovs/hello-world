@@ -1,16 +1,22 @@
-<hmtl>
-    <head> Formas </head>
+<html>
+    <head> 
+        <title> Formas </title>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/formstyle.css">
+    </head>
+    <body>
     <form>
         <h1>Tīmekļa formas</h1>
-        <p> Šodienas datums (uzspied pogu lejā)<input name="datums"></p>
-        <p> Spied! <input onclick="datums.value=new Date();" name="poga" value="datums" type="button">
+        <p> Šodienas datums (uzspied pogu lejā)<br><input name="datums"></p>
+        <p> Spied! <br><input onclick="datums.value=new Date();" name="poga" value="datums" type="button">
         </p>
-        <p> Ja gribi izdzēst, spied RESET <input value="reset" type="reset"> </p>
+        <p> Ja gribi izdzēst, spied RESET <br><input value="reset" type="reset" class = "medium"> </p>
     </form>
         
-    <form><div> 1. skaitlis <input type="text" name="sk1"> </div>
-        <div> <input value="-" name="minus" onclick="minus.value=sk1.value-sk2.value" type="button"> </div>
-        <div> 2. skaitlis <input name="sk2"> </div>
-        <div> Rezultāts <input name="minus"> </div> </form>
-
-</hmtl>
+    <form>
+        <div><input type="text" name="sk1" class = "small"> </div>
+        <div><input value="-" name="minus" onclick="result.value=sk1.value-sk2.value;" class = "small" type="button"></div>
+        <div><input name="sk2" class = "small"> </div>
+        <div> = <br><input name="result" class = "small"> </div> </form>
+    </body>
+</html>
